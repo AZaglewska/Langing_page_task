@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.subtitle {
+    color: get-color(gray, 700);
+    font-size: get-fontSize(700);
+    font-weight: get-fontWeight(medium);
+    margin-bottom: get-space(400);
+
+    @media (max-width: 50em) {
+        text-align: center;
+    }
+}

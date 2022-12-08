@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+
+.shape-background {
+    position: relative;
+    isolation: isolate;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        left: 3%;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        inset: 0;
+        aspect-ratio: 1;
+        background-image: url("/assets/shapes/Path1.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        @media (max-width: 50em) {
+            display: none;
+        }
+    }
+}   
+
+.intro-image {
+    justify-self: end;
+    @media (max-width: 50em) {
+       width: 90%;
+    }
+}
+
+.left-side-padding, .right-side-padding {
+    padding-left: 1.25rem;
+  }
+
+
+.right-side-padding {
+      padding-right: 1.25rem;
+  }
+
+@media (min-width: 80em) {
+    .left-side-padding {
+        padding-left: get-space(padding);
+    }
+    .right-side-padding {
+        padding-right: get-space(padding);
+    }
+                    
+}
+

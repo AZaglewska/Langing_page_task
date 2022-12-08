@@ -1,0 +1,59 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.button-container {
+        @media (max-width: 50em) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+.button {
+    cursor: pointer;
+    outline: none;
+    padding: .25rem 3.125rem;
+    border-radius: .125rem;
+    font-weight: get-fontWeight(medium);
+    font-size: get-fontSize(300);
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.button-blue {
+    background-color: get-color(blue, 800);
+    color: get-color(secondary, 100);
+    border: 2px solid get-color(blue, 800);
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.button-gray {
+    border: 2px solid get-color(gray, 700);
+    color: get-color(gray, 700);
+    margin-left: get-space(500);
+
+    &:hover {
+        background-color: get-color(gray, 700);
+        border: 2px solid get-color(gray, 700);
+        opacity: 0.9;
+        color: get-color(secondary, 100);
+    }
+
+}
+
+.intro-button {
+    font-size: get-fontSize(500);
+    line-height: 1.62;
+    padding: .313rem 3.125rem;
+    @media (max-width:50em) {
+        padding: .313rem 2rem;
+    }
+}
+
+.pricing-button {
+    font-size: get-fontSize(400);
+    line-height: 1.71;
+}

@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.article {
+    font-weight: get-fontWeight(regular);
+    font-size: get-fontSize(500);
+}
+
+.article-blue {
+    color: get-color(blue, 500);
+    font-size: get-fontSize(600);
+    line-height: 1.67;
+    margin-bottom: get-space(900);
+
+    span {
+        display: block;
+        margin-top: get-space(500);
+    }
+}
+
+.article-gray {
+    color: get-color(gray, 600);
+    line-height: 1.62;
+
+    span {
+        display: block;
+        margin-top: get-space(400);
+    }
+}

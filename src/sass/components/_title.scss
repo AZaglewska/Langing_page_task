@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.title {
+    color: get-color(gray, 700);
+    font-weight: get-fontWeight(medium);
+    font-size: get-fontSize(800);
+    letter-spacing: .063rem;
+    line-height: 1.32;
+    margin-bottom: get-space(500);
+
+    @media (max-width:50em) {
+        text-align: center;
+        font-size: get-fontSize(700);
+    }
+}
+

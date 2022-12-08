@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.details {
+    display: flex;
+    margin-top: get-space(1000);
+    @media(max-width:50em) {
+        margin-top: 3rem;
+    }
+    
+    &__elements {
+      padding-right: get-space(500);
+
+        h4 {
+            color: get-color(gray, 700);
+            font-size: get-fontSize(500);
+            font-weight: get-fontWeight(medium);
+            margin-top: get-space(400);
+            line-height: 1.62;
+        }
+
+        p {
+            color: get-color(gray, 600);
+            font-size: get-fontSize(300);
+            font-weight: get-fontWeight(regular);
+            margin-top: .5rem;
+            line-height: 1.5;
+        }
+    }
+}

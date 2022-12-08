@@ -1,0 +1,13 @@
+.image-container {
+    @media (max-width: 50em) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.flower-image {
+    @media (max-width: 50em) {
+      margin: 2rem 0;
+    
+    }
+}
